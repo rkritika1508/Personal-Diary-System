@@ -67,18 +67,27 @@ int main()
 }
 void record:: addrecord(string s)
 {
+    system("cls");
+    ofstream file;
     cout<<"Enter the title"<<endl;
     getline(cin, title);
+    file.open(title + ".txt");
     cout<<"Enter the note"<<endl;
     getline(cin, note);
-    ofstream file;
-    file.open("Note1.txt");
     file<<note;
     file.close();
 }
 void record:: viewrecord()
 {
+    system("cls");
+    int choice;
+    cout<<"ENTER TITLE          [1]"<<endl;
+    cout<<"ENTER DATE           [2]"<<endl;
+    cin>>choice;
+    if(choice==1)
+    {
 
+    }
 }
 void record:: editrecord()
 {
